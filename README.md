@@ -1,4 +1,5 @@
 Repositorio para ejemplos y ejercicos del Taller de Elemento Finito.
 
-Autor: David Ochoa
-Correo: dochoa (en) iteso.mx
+__Autor:__ David Ochoa
+
+__Correo:__ dochoa (en) iteso.mx
