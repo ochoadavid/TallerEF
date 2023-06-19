@@ -132,4 +132,12 @@ class Elemento1D:
             plt.axis('off')
             plt.axis('equal')
             plt.show()
-        
+
+    def out_xlsx(self, archivo):
+        ''' Graba la matriz del elemento en un archivo de excel'''
+        import pandas as pd
+        empty = np.zeros(self.num_nodos)
+        empty[:] = np.nan
+        out = np.column_stack((self.out_matrix(extend=True),empty,self.out_force(extend=True)))
+        df = pd.DataFrame(out)
+        df.to_excel(archivo, index=False, header=False)
