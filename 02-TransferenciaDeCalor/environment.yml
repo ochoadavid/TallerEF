@@ -1,0 +1,5 @@
+name: python
+dependencies:
+  - python
+  - numpy
+  - matplotlib
